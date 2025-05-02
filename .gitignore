@@ -1,0 +1,56 @@
+# ========================
+# Python artifacts
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+
+# ========================
+# Virtual environments
+# ========================
+venv/
+.venv/
+
+# ========================
+# VS Code & IDEs
+# ========================
+.vscode/
+.idea/
+*.iml
+
+# ========================
+# Terraform
+# ========================
+*.tfstate
+*.tfstate.backup
+.terraform/
+crash.log
+terraform.tfvars
+*.exe
+terraform.zip
+
+# ========================
+# AWS credentials (if any)
+# ========================
+*.pem
+*.key
+
+# ========================
+# Pytest cache
+# ========================
+.pytest_cache/
+
+# ========================
+# Local data files
+# ========================
+data/
+scripts/__pycache__/
+tests/__pycache__/
+
+# ========================
+# OS system files
+# ========================
+.DS_Store
+Thumbs.db
