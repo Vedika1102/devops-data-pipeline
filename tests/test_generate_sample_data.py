@@ -23,7 +23,7 @@ def test_generate_data_csv_header(temp_csv_file):
         reader = csv.reader(f)
         header = next(reader)
 
-        assert header == ['City','Temperature', 'timestamp']
+        assert header == ['city','temperature', 'timestamp']
 
 def test_generate_temperature_csv_content(temp_csv_file):
     num_Records = 5
