@@ -31,7 +31,7 @@ resource "aws_s3_bucket_versioning" "raw_data" {
   bucket = aws_s3_bucket.raw_data.id
 
   versioning_configuration {
-    status = "Enabled"
+    status = "Disabled"
   }
 }
 
@@ -46,8 +46,10 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "raw_data" {
 }
 
 resource "aws_s3_object" "data_directory" {
+  depends_on= [null_resource.empty_s3_bucket]
   bucket = aws_s3_bucket.raw_data.id
   key    = "data/"
+  content = ""
 }
 
 # ─────────────────────────────────────────────────────────────────────
@@ -69,6 +71,7 @@ resource "null_resource" "empty_s3_bucket" {
 # Upload data CSV to S3
 # ─────────────────────────────────────────────────────────────────────
 resource "aws_s3_object" "temperature_data" {
+  depends_on = [null_resource.empty_s3_bucket]
   bucket       = aws_s3_bucket.raw_data.id
   key          = "data/temperature_data.csv"
   source       = "../data/temperature_data.csv"
