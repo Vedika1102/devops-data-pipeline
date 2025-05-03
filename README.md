@@ -48,7 +48,7 @@ The current implementation simulates **temperature sensor readings**, but the ar
 
 ##  Why This Project Matters
 
-This project encapsulates **end-to-end automation** of a cloud data pipeline — from ingestion to query — all version-controlled and production-deployable. It reflects the **skillset of a data engineer or cloud engineer** working in **modern analytics teams**, including:
+This project encapsulates **end-to-end automation** of a cloud data pipeline from ingestion to query all version-controlled and production-deployable. It reflects the **skillset of a data engineer or cloud engineer** working in **modern analytics teams**, including:
 
 - Infrastructure as Code (Terraform modules)
 - Serverless data lake querying (Athena)
