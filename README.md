@@ -43,6 +43,7 @@ The current implementation simulates **temperature sensor readings**, but the ar
   - Code linting & security scans (`bandit`)
   - Infrastructure validation (`terraform plan`)
   - Deployment (`terraform apply`)
+
 ![Screenshot 2025-05-02 183500](https://github.com/user-attachments/assets/687909ea-d632-4f4c-bc69-989f881dfe66)
 
 ---
