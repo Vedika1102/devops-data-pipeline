@@ -45,7 +45,6 @@ terraform.zip
 # ========================
 # Local data files
 # ========================
-data/
 scripts/__pycache__/
 tests/__pycache__/
 

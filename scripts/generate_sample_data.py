@@ -6,7 +6,7 @@ def generate_temperature_csv(filename, num_records=10000):
     if num_records<0 :
         raise ValueError('Number of must be positive')
     cities = ["New York", "London", "Tokyo","Paris","Sydney"]
-    header = ["City", "Temperature","timestamp"]
+    header = ["city", "temperature","timestamp"]
 
     os.makedirs(os.path.dirname(filename), exist_ok=True)
 
