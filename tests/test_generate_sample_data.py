@@ -42,7 +42,7 @@ def test_generate_temperature_csv_content(temp_csv_file):
             #test for temp
             temp = float(row[1])
             assert 10 <= temp <=35
-            timestamp = datetime.fromisoformat(row[2])
+            timestamp = datetime.strptime(row[2], '%Y-%m-%d %H:%M:%S')
             assert isinstance(timestamp, datetime)
 
 def test_generate_temperature_csv_different_sizes(temp_csv_file):
