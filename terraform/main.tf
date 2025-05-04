@@ -31,7 +31,7 @@ resource "aws_s3_bucket_versioning" "raw_data" {
   bucket = aws_s3_bucket.raw_data.id
 
   versioning_configuration {
-    status = "Disabled"
+    status = "Enabled"
   }
 }
 
